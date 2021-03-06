@@ -96,16 +96,16 @@
     function scoreCompare(home, away) {
       if (home > away) {
         return "Home team wins!";
-      } else if (home = away) {
-        return "It was a tie"
-      } else {
+      } else if (home < away) {
         return "Away team wins :("
+      } else {
+        return "It was a tie"
       } 
     }
     console.log(scoreCompare(5,3));
     console.log(scoreCompare(5,5));
     console.log(scoreCompare(3,5));
-    
+
   </script>
 </body>
 </html>
