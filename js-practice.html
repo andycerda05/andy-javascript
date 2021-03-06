@@ -19,8 +19,7 @@
     let z = x * y;
     console.log(z);
 
-    // "Math on my own." - the video demonstration did 'console.log' instead of just comment, so I did both just to be safe
-    console.log("Math on my own.")
+    // "Math on my own." 
     let b = 5;
     console.log(b);
     let a = 10;
@@ -42,10 +41,41 @@
     let name = firstName + " " + middleName + " " + lastName;
     console.log(name)
 
-     // "Strings on my own." - the video demonstration did 'console.log' instead of just comment, so I did both just to be safe
-    console.log("Strings on my own.");
-     let greeting = "My name is " + name;
+     // "Strings on my own." 
+    let greeting = "My name is " + name;
     console.log(greeting); 
+
+    console.log("Using functions:");
+
+    // function to make square numbers
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+
+    let try01 = makeSquare(3);
+    console.log(try01);
+
+    let try02 = makeSquare(5);
+    console.log(try02);
+
+    let try03 = makeSquare(10);
+    console.log(try03);
+
+    // Functions on my own
+    function nameConstruction(firstName, middleName, lastName) {
+      let fullName = firstName + ' ' + middleName + ' ' + lastName;
+      return fullName;
+    }
+
+    let name1 = nameConstruction("Emanuel", "David", "Ginobili");
+    console.log(name1)
+
+    let name2 = nameConstruction("Sterling", "Malory", "Archer");
+    console.log(name2)
+
+    let name3 = nameConstruction("Robert", '"Beto"', "O\'Rourke");
+    console.log(name3)
 
   </script>
 </body>
